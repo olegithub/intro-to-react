@@ -18,15 +18,20 @@
         constructor(props){
            super(props);
            this.state = {
-             number: 1
+             number: 1,
+             update: "learning some React"
            }
          }
+
+      
+
         render() {
           return (
             <div>
               <img src={this.props.image} alt="Bloc Logo"/>
               <h2>Current program: {this.props.label}</h2>
               <h3>Current week: {this.state.number}</h3>
+              <h4>Current update: {this.state.update}</h4>
               <p>Current Date: {this.props.date.toLocaleDateString()}</p>
             </div>
           );
